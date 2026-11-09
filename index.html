@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haitao Zhang — Indie Developer & AI Builder</title>
+<meta name="description" content="Indie developer building local AI media pipelines, a self-hosted push client, and GPU inference experiments.">
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--accent2:#3fb950}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.6}
+  .wrap{max-width:860px;margin:0 auto;padding:48px 20px 64px}
+  header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:32px}
+  h1{font-size:34px;letter-spacing:.2px}
+  .role{color:var(--accent);font-size:17px;margin-top:6px}
+  .tagline{color:var(--muted);margin-top:12px;max-width:640px}
+  .links{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+  .links a{color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 14px;text-decoration:none;font-size:14px;background:var(--panel)}
+  .links a:hover{border-color:var(--accent);color:var(--accent)}
+  h2{font-size:20px;margin:34px 0 14px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .card h3{font-size:16px;margin-bottom:6px}
+  .card h3 a{color:var(--accent);text-decoration:none}
+  .card p{color:var(--muted);font-size:14px}
+  .tags{margin-top:10px}
+  .tag{display:inline-block;font-size:12px;color:var(--accent2);border:1px solid var(--line);border-radius:20px;padding:1px 9px;margin:0 6px 6px 0}
+  ul.about{color:var(--muted);padding-left:20px}
+  ul.about li{margin:4px 0}
+  footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Haitao Zhang</h1>
+    <div class="role">Indie Developer · AI Content Creator · Self-hoster</div>
+    <p class="tagline">I build and run local AI pipelines for media production — video generation, voice cloning, music generation — and maintain a fleet of self-hosted services. Currently exploring large-model inference on big-memory GPUs (AMD Instinct MI300X / ROCm).</p>
+    <div class="links">
+      <a href="https://github.com/jiaozhenlab">GitHub</a>
+      <a href="https://x.com/JiaozhenLab">X / Twitter</a>
+      <a href="https://www.youtube.com/@JiaozhenLab">YouTube</a>
+      <a href="https://zhanghaitao.com">Blog</a>
+    </div>
+  </header>
+
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><a href="https://github.com/jiaozhenlab/Bark">Push Client (Bark fork)</a></h3>
+      <p>A self-hosted iOS push notification client, forked from Finb/Bark (MIT) and adapted for my own automation stack: home-server alerts, missed-call notifications and machine pings — no third-party push dependency.</p>
+      <div class="tags"><span class="tag">Swift</span><span class="tag">iOS</span><span class="tag">APNs</span><span class="tag">Self-hosted</span></div>
+    </div>
+    <div class="card">
+      <h3>Local AI Video Pipeline</h3>
+      <p>LTX-2.3 / Wan 2.2 image-to-video workflows on Apple Silicon (MLX), F5-TTS voice cloning for narration, automated QC and subtitling. Powers two running video channels.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">MLX</span><span class="tag">LTX</span><span class="tag">F5-TTS</span></div>
+    </div>
+    <div class="card">
+      <h3>Music Generation Lab</h3>
+      <p>YuE2 open-source music model running on free-tier cloud GPUs (Kaggle T4 x2), producing songs with editable ABC notation. Reproducible notebooks, zero-cost setup.</p>
+      <div class="tags"><span class="tag">PyTorch</span><span class="tag">Kaggle</span><span class="tag">YuE2</span></div>
+    </div>
+    <div class="card">
+      <h3>GPU Inference Lab — MI300X</h3>
+      <p>Benchmark plan: single-card 70B+ LLM inference and 128K-context stress tests on AMD Instinct MI300X (192GB HBM3) with vLLM on ROCm, compared against CUDA baselines. Results will be published here.</p>
+      <div class="tags"><span class="tag">vLLM</span><span class="tag">ROCm</span><span class="tag">MI300X</span><span class="tag">Benchmarks</span></div>
+    </div>
+  </div>
+
+  <h2>About</h2>
+  <ul class="about">
+    <li>Based in Beijing; building in public as <b>JiaozhenLab</b> （较真实验室） — "real tests, real numbers".</li>
+    <li>Self-host everything I can: VPS fleet, home servers, push infrastructure, media pipelines.</li>
+    <li>Interests: GPU inference economics, open-source media models, privacy-respecting tooling.</li>
+  </ul>
+
+  <footer>© 2026 Haitao Zhang · dev.zhanghaitao.com · Built by hand, hosted on GitHub Pages.</footer>
+</div>
+</body>
+</html>
